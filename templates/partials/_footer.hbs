@@ -1,0 +1,27 @@
+<p>This is footer copy ...</p>
+
+
+    </div><!--/.contain -->
+</div><!--/.main-wrapper -->
+
+{{! Javascript application code managed here. Uses source files in dev and build files in production and release. If you don't want to use RequireJS, just delete it all }}
+{{# unless production}}
+    {{! development source reference}} 
+    <script data-main="static/js/main" src="static/js/vendor/requirejs/require.js"></script>
+    <script src="//localhost:1337/livereload.js"></script>
+{{else}}
+    {{! production build script referenced. Grunt builds this file. You shouldn't have to alter the src }} 
+    <script src="static/js/{{version}}/build-{{timestamp}}.js"></script>
+{{/unless}}
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+</body>
+</html>

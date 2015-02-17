@@ -1,0 +1,116 @@
+---
+layout: index.hbs
+---
+<header class="header">
+    <div class='mod mod-pad meta'>
+        <div class='col-ab'>
+            <h1>Template index</h1>
+            <h2><i>Browse the project templates</i></h2>
+        </div>
+        <div class='col-c'>
+            <h3>Site version: {{pkg.version}}</h3>
+            <h4>Site contacts: {{pkg.author}}</h4>
+        </div>
+    </div>
+</header>
+
+
+<div class="mod mod-pad">
+    <h3>.mod .mod-pad</h3>
+    <div class="col-c">
+        <h3>.col-c</h3>
+        <div class='all-templates'>
+            <ul>
+                {{#each pages}}
+                    {{#isnt basename 'index' }}
+                        <li><a href="{{basename}}.html">{{basename}}</a></li>
+                    {{/isnt }}
+                {{/each}}
+            </ul>
+        </div>
+    </div> 
+    <div class='col-ab'>
+        <h3>.col-ab</h3>
+        <h2>Hello. This is a starter index page for the Joist project</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra sem eget ligula bibendum, at eleifend lorem dignissim. Donec adipiscing egestas risus at rhoncus. Etiam blandit at risus quis fermentum. Nulla eu metus ac nibh ultricies adipiscing. Nullam interdum, odio eu interdum elementum, urna ipsum feugiat ligula, in gravida mi eros vel tortor. Vivamus vitae quam sit amet urna eleifend ultrices. Donec convallis commodo sem, eget imperdiet nulla luctus sed. Nam interdum in risus vel porta. Pellentesque lectus risus, imperdiet ac iaculis id, consequat in eros.</p>
+
+        <div>
+            <button class="button primary-button">Button</button>
+            <button class="button primary-button button-small">Some button</button>
+            <button class="button button-large">Final button</button>
+        </div>
+
+        <div>
+            <form class="form form-stacked">
+                <fieldset>
+                    <legend>A simple form!</legend>
+                    <label>Form element</label>
+                        <input type="text">
+                    <label>Form element</label>
+                        <input type="text">
+                    <label>Form element</label>
+                        <textarea></textarea>
+                    <label>Form element</label>
+                        <select>
+                            <option>Some option</option>
+                            <option>Some option</option>
+                            <option>Some option</option>
+                            <option>Some option</option>
+                        </select>
+                    <button type="submit" class="button primary-button">Sign in</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <div class="mod mod-pad flex-pad">
+        <h3>.mod (stands for module. Constitutes a "row", within which are columns) .mod-pad (outside padding)</h3>
+        <div class="col-tile">
+            <article class="article">
+                25% - .col-tile
+                <div class="mod mod-pad flex-pad">
+                    <div class="col-half">
+                        <article class="article">50% - .col-half</article>
+                    </div>
+                    <div class="col-half">
+                        <article class="article">50% - .col-half</article>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-tile">
+            <article class="article">25% - .col-tile</article>
+        </div>
+        <div class="col-half">
+            <article class="article">
+            50% - .col-half
+                <div class="mod mod-pad flex-pad">
+                    <div class="col-half">
+                        <article class="article">
+                           50% - .col-half 
+                            <div class="mod mod-pad flex-pad"> 
+                                <div class="col-tile">
+                                    <article class="article">25% - .col-tile</article>
+                                </div>
+                                <div class="col-tile">
+                                    <article class="article">25% - .col-tile</article>
+                                </div>
+                                <div class="col-tile">
+                                    <article class="article">25% - .col-tile</article>
+                                </div>
+                                <div class="col-tile">
+                                    <article class="article">25% - .col-tile</article>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-half">
+                        <article class="article">50% - .col-half</article>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+

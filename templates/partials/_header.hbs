@@ -1,0 +1,46 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        {{#if production}}
+            <style id="basic-css">{{{basicCSS}}}</style>
+        {{else}}
+            <link id="basic-css" rel="stylesheet" href="static/css/basic.css">
+        {{/if}}
+  
+    <!--[if (IE 8) & (!IEMobile)  ]>
+        {{#if production}}
+            <link href="static/css/{{version}}/all-ie-build-{{timestamp}}.css" rel="stylesheet">
+        {{else}}
+            <link href="static/css/all-ie.css" rel="stylesheet">
+        {{/if}}
+    <![endif]-->
+      
+      <!--[if !(IE) | (gte IE 9) | (IEMobile)]><!-->
+        {{#if production}}
+            <link href="static/css/{{version}}/all-build-{{timestamp}}.css" rel="stylesheet" media="only all">
+        {{else}}
+            <link href="static/css/all.css" rel="stylesheet" media="only all">
+        {{/if}}
+      <!--<![endif]-->
+        {{#if production}}
+        <script>{{{modernizr}}}</script>
+        {{else}}
+            <script src="static/js/vendor/modernizr/modernizr.js"></script>
+        {{/if}}
+
+</head>
+<body>
+
+<div class='main-wrapper'>
+
+    <div class='contain'>
+    

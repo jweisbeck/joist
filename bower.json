@@ -1,0 +1,24 @@
+{
+  "name": "joist",
+  "version": "0.1.0",
+  "description": "A frontend support for WGBH projects",
+  "authors": [
+    "Jesse Weisbeck",
+    "Dan Middleton"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.10.2",
+    "modernizr": "~2.7.1",
+    "requirejs": "~2.1.9",
+    "box-sizing-polyfill": "*"
+  }
+}

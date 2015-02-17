@@ -1,0 +1,9 @@
+---
+layout: index.hbs
+---
+<h1>This is the article.hbs template ... </h1>
+{{#each article.links }}
+    <p>{{link}}<p>
+{{/each}}
+{{article.byline}}
+{{> _header-content}}

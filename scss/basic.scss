@@ -1,0 +1,5 @@
+/* Basic, non-enhanced styles for Ye Olde Agents here. If the agent is sufficiently modern, this stylesheet will be removed from the DOM */
+/* NB This stylesheet is read into the base html template at build time. It should only contain HTML 1 styles */ 
+p {
+    font-size: 14px;
+}
